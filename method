@@ -1,0 +1,37 @@
+1.메소드
+하나 또는 여러가지 기능을 묶어서 독립적으로 사용할 수 있는 프로그램 구성 단위
+입력값(파라미터)을 넣어주면 해당 기능을 처리하고 출력값을 되돌려준다
+
+2. 메소드 특징
+메소드 내부에 메소드 추가 작성 안됨
+메소드는 특정 기능을 수행하기위해 잘라놓은 것
+작성한 메소드는 다른 메소드 안에서 호출
+
+3. 메소드 종류
+  1) returnType(x) : void nameOfMethod (void){}
+  2) void nameofMethod (Parameter List)
+  3) returnType nameOfMethod (void){}
+  4) returnType nameOfMethod (Parameter List)
+
+4. 메소드 작성 형식
+자료형 메소드이름(매개 변수1, 매개 변수 2, ...){ ... }
+
+5. main 메소드
+유일하게 이름이 지정되어있는 메소드
+한 프로그램에 반드시 main 메소드가 존재해야하고 한 프로젝트당 반드시 하나만 존재해야함.
+Call stack은 메소드를 호출하기 위한 계층, 그래서 call stack에는 항상 main 메소드가 들어있음
+
+------------------------------------------------
+modifier returnType nameOfMethod (Parameter List){
+	//method body
+}
+
+header : 리턴타입, 메서드 이름, 매개변수 정보
+body : {} 호출시 실행영역
+매개변수 Parameter : 메서드 호출(call)시 제공되는 인자를 매개변수에 대입
+void : return 뒤에 value가 존재하지 않는 경우 returnType void로 지정
+return : 헤더에 리턴타입 있으면 return value 반드시 있어야 한다.
+		return ; value 없는 return 문장은 메서드의 종료를 의미
+호출(call) : 메서드 이름 (매개값, ....) ; 형태로 호출
+오버로딩 : 클래스 내에 같은 이름의 메서드를 여러개 정의 가능
+	단, 매개변수의 개수, 타입, 순서로 서로 구분 가능해야 함
